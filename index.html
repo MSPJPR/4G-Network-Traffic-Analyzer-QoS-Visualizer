@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4G Network Traffic Analyzer & QoS Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>4G Network Traffic Analyzer & QoS Visualizer</h1>
+
+    <div id="network-traffic"></div>
+    <canvas id="traffic-chart" width="400" height="200"></canvas>
+
+    <div id="mobility-visualizer"></div>
+    <canvas id="mobility-canvas" width="400" height="200"></canvas>
+
+    <div id="tcp-status"></div>
+
+    <div id="qos-panel">
+        <h2>QoS Configuration</h2>
+        <label for="qos-select">Select QoS Model:</label>
+        <select id="qos-select">
+            <option value="INSIGNIA">INSIGNIA</option>
+            <option value="INORA">INORA</option>
+            <option value="SWAN">SWAN</option>
+            <option value="RTMAC">RTMAC</option>
+        </select>
+        <button id="apply-qos">Apply QoS</button>
+        <p id="qos-result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
